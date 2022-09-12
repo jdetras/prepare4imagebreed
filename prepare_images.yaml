@@ -1,0 +1,25 @@
+# Define variables and directories for prepare_images.yaml
+
+---
+#imaging event
+imaging_event: imaging_event_name
+
+#directories
+input_path : /content/gdrive/MyDrive/path/to/imagery
+trial_path: /content/gdrive/MyDrive/path/to/trial
+output_path: /content/gdrive/MyDrive/path/to/output
+
+#excel file variable
+field_trial_name: 'trial_name' #must match field trial defined in Imagebreed
+geojson_filename: trial.geojson.zip #compressed geojson file
+geojson_file: trial.geojson #uncompressed geojson file
+date_time: '2022/09/12 12:00:00' #data format
+
+#tif files to copy
+dsm_path: 3_dsm_ortho/1_dsm/*_dsm.tif
+reflectance_path: 4_index/reflectance/*.tif
+
+#template directory. choose between re and rgb accordingly
+template_excel: /content/gdrive/path/to/imagingevents.csv
+
+...
